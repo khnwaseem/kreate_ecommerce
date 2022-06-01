@@ -1,0 +1,108 @@
+.container__page {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container__cart {
+    border: 2px solid lightgrey;
+    width: 90%;
+    margin: 10px 20px;
+}
+
+.container__cart__detail {
+    width: 50%;
+    height: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__cart__heading > h3 {
+    font-size: 20px;
+    width: 100%;
+    font-weight: 500;
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
+
+}
+
+.container__cart__detail__image > img {
+    width: 70%;
+    border-radius: 5px;
+}
+
+.container__cart__detail__name > h5{
+   font-size: 15px;
+   font-weight: 500;
+   margin-top: 3px;
+}
+
+.container__cart__detail__vendor > h6 {
+    font-size: 14px;
+     margin-top: 2px;
+     font-weight: 400;
+     color: grey
+}
+
+.container__cart__detail__price  > p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+.container__login {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid lightgrey;
+    width: 90%;
+    margin: 10px 20px;
+}
+
+.container__login__header {
+    text-align: center;
+}
+
+.container__login__header > p {
+    font-size: 16px;
+}
+
+.container__login__button {
+    text-align: center;
+    margin-top: 20px
+}
+
+.container__login__button > button {
+    padding: 15px 0px;
+    width: 120px;
+    background-color: #EF336E;
+    border: 2px solid #EF336E;
+    color: #efefef;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+
+@media (min-width: 900px) {
+    .container__page {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .container__cart {
+        width: 40%;
+    }
+    .container__login {
+        width: 40%;
+        height: 160px;
+
+    }
+}
+
+
+

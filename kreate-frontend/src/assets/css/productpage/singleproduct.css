@@ -1,0 +1,142 @@
+.container__singleproduct {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.container__singleproduct__images {
+    width: 100%;
+    margin-right: 20px;
+    background-color: black;
+    border-radius: 5px;
+
+}
+
+.container__singleproduct__image {
+    width: 100%;
+    padding: 0px 30px;
+    
+}
+
+.container__singleproduct__image > img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container__singleproduct__description {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.container__singleproduct__description__title > h4 {
+    font-size: 16px;;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.container__singleproduct__description__vendor > h6 {
+   font-size: 14px;
+   color:gray;
+   margin-bottom: 14px;
+   font-weight: 400;
+}
+
+.container__singleproduct__description__price > p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.container__singleproduct__description__productdetail > h5{
+   font-size: 16px;
+   color: black;
+   letter-spacing: 0.3px;
+   font-weight: 600;
+}
+
+.container__singleproduct__description__productdetail > p {
+    font-size: 13px;
+    margin-top: 3px;
+    letter-spacing: 0.2px;
+
+}
+
+.container__singleproduct__add_to_cart_form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container__singleproduct__add_to_cart__button > button{
+    padding: 15px 0px;
+    width: 250px;
+    background-color: white;
+    border: 2px solid #EF336E;
+    color: #EF336E;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.container__singleproduct__add_to_cart__button > button:hover {
+    cursor: pointer;
+}
+
+.container__singleproduct__buy_now__button > button:hover {
+    cursor: pointer;
+}
+
+.container__singleproduct__add_to_cart_form {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.container__singleproduct__buy_now__button > button {
+    padding: 15px 0px;
+    width: 250px;
+    background-color: #EF336E;
+    border: 2px solid #EF336E;
+    color: #efefef;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+
+
+
+@media(min-width: 800px) {
+    
+    .container__singleproduct { 
+       flex-direction: row;
+
+    }
+
+    .container__singleproduct__images {
+        width: 40%;
+        margin-right: 20px;
+        background-color: #efefef;
+        height: 80%;
+        margin: 20px 25px;
+        border-radius: 5px;
+    }
+    .container__singleproduct__image {
+        width: 100%
+    }
+    
+    .container__singleproduct__image > img {
+        width: 100%;
+        border-radius: 5px;
+        padding: 20px 0px
+    }
+    
+    .container__singleproduct__description {
+        width: 40%;
+        margin-top: 20px;
+    }
+}
