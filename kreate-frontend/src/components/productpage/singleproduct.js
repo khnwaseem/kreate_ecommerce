@@ -4,8 +4,9 @@ import axios from "axios"
 import "../../assets/css/productpage/singleproduct.css"
 import { useDispatch,useSelector } from "react-redux"
 import { AddToCart } from "../../features/cart/addToCartSlice"
+import { useNavigate } from "react-router-dom"
 
-const SingleProduct = () => {
+const SingleProduct = (props) => {
 
      const [product,setProduct] = useState("")
      const [loading,setLoading] = useState(false)
@@ -34,7 +35,6 @@ const SingleProduct = () => {
      const AddToCartButton = () => {
         window.scrollTo(0, 0)
         let quantity = 1 
-
             dispatch(AddToCart({
             id: product._id,
             title: product.title,
@@ -44,8 +44,24 @@ const SingleProduct = () => {
             image: product.productimage,
             quantity: quantity
          }))
+}
 
+const navigate = useNavigate();
 
+const BuyNowButton = () => {
+   navigate('/cart')
+    window.scrollTo(0, 0)
+        let quantity = 1 
+        
+            dispatch(AddToCart({
+            id: product._id,
+            title: product.title,
+            price: product.price,
+            vendor: product.vendor,
+            slug: product.slug,
+            image: product.productimage,
+            quantity: quantity
+         }))
 }
 
    useEffect(() => {
@@ -83,7 +99,7 @@ const SingleProduct = () => {
                            <button onClick={AddToCartButton}>ADD TO CART</button>
                        </div>
                        <div className="container__singleproduct__buy_now__button">
-                            <button>BUY NOW</button>
+                            <button onClick={BuyNowButton}>BUY NOW</button>
                        </div>
                     </div>
                     <div className="container__singleproduct__description__productdetail">

@@ -69,7 +69,7 @@ const Products = () => {
 products && products.map((pro) => { 
     
     return(
-        <React.Fragment key={pro.id}>
+        <React.Fragment key={pro._id}>
         <Link to={`/product/${pro.slug}`} >
       <div className="container__products__card" >  
      <img alt="" className="container__products__card__image" src={pro.productimage}/>

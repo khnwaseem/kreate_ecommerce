@@ -21,7 +21,7 @@ console.log(cartSelector)
                               cartSelector.map((cartvalue) => {
                                   return (
 
-                                    <div className="container__cart__detail" key={cartvalue.slug}>
+                                    <div className="container__cart__detail" key={cartvalue.id}>
                                     <div className="container__cart__detail__image">
                                        <img alt={cartvalue.id} src= {cartvalue.image} />
                                     </div>
